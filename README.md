@@ -1,0 +1,2 @@
+# mydiscordbot
+money
