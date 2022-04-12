@@ -1,13 +1,12 @@
 '''
 Author: your name
 Date: 2022-04-09 21:03:33
-LastEditTime: 2022-04-11 14:44:30
+LastEditTime: 2022-04-13 00:47:57
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \HELP\price.py
 '''
-#導入 Discord.py
-from symtable import Symbol
+#導入 passwd.py
 import requests,discord,json,ccxt,binance,passwd,requests,datetime
 #client 是我們與 Discord 連結的橋樑
 client = discord.Client()
@@ -112,14 +111,11 @@ async def on_message(message):
         r=requests.get('https://data.epa.gov.tw/api/v2/uv_s_01?api_key=a5e87e8e-043a-4724-98e6-4bc3e547e83b', verify=False)
         for t in range(34):await message.channel.send(f"地點:{r.json()['records'][t]['sitename']} UV:{r.json()['records'][t]['uvi']} 時間:{r.json()['records'][t]['publishtime']}")
     
-    if message.content.startswith('binfuex'):#非常重要的部分 考慮挖出來做?
-        if message.content.split()[2]!="flat":
-            try:
-                binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2],type="MARKET",quantity=1)
-                order=binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2],type="MARKET",quantity=1)
-                await message.channel.send(order)
-            except Exception as e:await message.channel.send(e.message, "error")
-        else:binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2],type="MARKET",quantity=1)
+    if message.content.startswith('binfuex') and message.content.split()[1]!="test":#非常重要的部分 考慮挖出來做?
+        try:
+            order=binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2].upper(),type="MARKET",quantity=5)
+            await message.channel.send(f"下單 {order['symbol']} 狀態{order['status']} 方向{order['side']} ")
+        except Exception as e:await message.channel.send(e.message, "error")
     
     if message.content.startswith('binasset'):
         asetname=message.content.split()[1]
@@ -129,6 +125,8 @@ async def on_message(message):
         coinname,lv=message.content.split()[1],int(message.content.split()[2])
         case=binclient.futures_change_leverage(symbol=coinname,leverage=lv)
         await message.channel.send(f"更改 {case['symbol']} 的槓桿為 {case['leverage']} 倍，最大名義值為 {case['maxNotionalValue']} USDT。")
-        
 
+    
+        
+    
 client.run(passwd.API_DISCORD_TOKEN) #TOKEN 在剛剛 Discord Developer 那邊「BOT」頁面裡面
