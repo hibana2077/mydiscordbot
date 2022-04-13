@@ -20,7 +20,7 @@ Discord</br>
 
 [binance的說明文件] (https://binance-docs.github.io/apidocs/spot/cn/#45fa4e00db)</br>
 
-[This is an external link to genome.gov] (https://www.genome.gov/)
+* [Mathologer](https://www.youtube.com/c/Mathologer)
 
 <h1>必要條件</h1>
 一台電腦</br>
