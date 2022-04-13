@@ -45,3 +45,11 @@ TradingView Pro帳號</br>
 * [下載Python](https://www.python.org/downloads/)</br>
 
 ![](img/download-Python.png)
+
+![](img/click.png)
+
+![](img/click2.png)
+
+![](img/click3.png)
+
+![](img/click4.png)
