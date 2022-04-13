@@ -26,3 +26,8 @@ Discord</br>
 Discord帳號</br>
 Binance帳號</br>
 TradingView Pro帳號</br>
+
+
+<h1>帳號註冊</h1>
+
+* [幣安註冊](https://www.binance.com/zh-TW/activity/referral/offers/claim?ref=CPA_00JTV45LM5)</br>
