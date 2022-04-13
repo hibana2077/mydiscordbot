@@ -6,6 +6,7 @@
 Python</br>
 API</br>
 Discord</br>
+
 *Azure VM*
 
 <h1>參考資料</h1>
