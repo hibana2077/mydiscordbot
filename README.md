@@ -69,4 +69,12 @@ TradingView Pro帳號</br>
 
 ![](img/file1.png)
 
+![](img/passwd.png)
 
+![](img/passwd1.png)
+
+![](img/passwd2.png)
+
+![](img/passwd3.png)
+
+![](img/passwd4.png)
