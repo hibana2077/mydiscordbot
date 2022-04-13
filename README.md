@@ -54,4 +54,10 @@ TradingView Pro帳號</br>
 
 ![](img/click4.png)
 
-然後重新開機，並且重開後打開CMD。
+重新開機，接著按照下圖流程走。
+
+![](img/cmd1.png)
+
+![](img/cmd3.png)
+
+![](img/cmd2.png)
