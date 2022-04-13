@@ -78,3 +78,6 @@ TradingView Pro帳號</br>
 ![](img/passwd3.png)
 
 ![](img/passwd4.png)
+
+然後依序填進去passwd.py即可，再按下ctrl+s。
+
