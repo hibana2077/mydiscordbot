@@ -1,13 +1,14 @@
 '''
 Author: your name
 Date: 2022-04-09 21:03:33
-LastEditTime: 2022-04-13 00:47:57
+LastEditTime: 2022-04-13 12:07:51
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \HELP\price.py
 '''
 #導入 passwd.py
 import requests,discord,json,ccxt,binance,passwd,requests,datetime
+qu=1
 #client 是我們與 Discord 連結的橋樑
 client = discord.Client()
 binclient = binance.Client(passwd.API_KEY,passwd.API_SECRET)
@@ -113,7 +114,7 @@ async def on_message(message):
     
     if message.content.startswith('binfuex') and message.content.split()[1]!="test":#非常重要的部分 考慮挖出來做?
         try:
-            order=binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2].upper(),type="MARKET",quantity=5)
+            order=binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2].upper(),type="MARKET",quantity=qu)
             await message.channel.send(f"下單 {order['symbol']} 狀態{order['status']} 方向{order['side']} ")
         except Exception as e:await message.channel.send(e.message, "error")
     
@@ -126,7 +127,9 @@ async def on_message(message):
         case=binclient.futures_change_leverage(symbol=coinname,leverage=lv)
         await message.channel.send(f"更改 {case['symbol']} 的槓桿為 {case['leverage']} 倍，最大名義值為 {case['maxNotionalValue']} USDT。")
 
-    
-        
+    if message.content.startswith('binfuchangeq'):
+        print(qu)
+        qu=int(message.content.split()[1])
+        await message.channel.send(f"成功改變合約數量 新的交易量為{qu}")
     
 client.run(passwd.API_DISCORD_TOKEN) #TOKEN 在剛剛 Discord Developer 那邊「BOT」頁面裡面
