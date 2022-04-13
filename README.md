@@ -15,6 +15,8 @@ Discord</br>
 [很猛的外國人做的交易機器人](https://github.com/hackingthemarkets/tradingview-binance-strategy-alert-webhook)</br>
 [python-binance包的說明文件](https://python-binance.readthedocs.io/en/latest/)</br>
 [binance的說明文件](https://binance-docs.github.io/apidocs/spot/cn/#45fa4e00db)</br>
+[Google][]
+[Google]: http://google.com/
 
 <h1>必要條件</h1>
 一台電腦</br>
