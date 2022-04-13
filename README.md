@@ -64,3 +64,7 @@ TradingView Pro帳號</br>
 下載地點選一個你開心的地方就好。
 
 解壓縮後，按照下圖流程走。
+
+![](img/file.png)
+
+![](img/file.png)
