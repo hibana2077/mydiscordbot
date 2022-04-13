@@ -23,4 +23,5 @@ Discord</br>
 
 <h1>必要條件</h1>
 一台電腦</br>
-Discord帳號 * [自動交易機器人](https://github.com/blockplusim/crypto_trading_service_for_tradingview)</br>
+Discord帳號 
+* [自動交易機器人](https://github.com/blockplusim/crypto_trading_service_for_tradingview)</br>
