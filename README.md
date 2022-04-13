@@ -7,8 +7,7 @@ Python</br>
 API</br>
 Discord</br>
 
-*Azure VM*
-
+*Azure VM*</br>
 *Linux*
 
 <h1>參考資料</h1>
