@@ -11,4 +11,6 @@ Discord</br>
 *Linux*
 
 <h1>參考資料</h1>
-[文字](https://github.com/blockplusim/crypto_trading_service_for_tradingview)
+[自動交易機器人](https://github.com/blockplusim/crypto_trading_service_for_tradingview)
+[很猛的外國人做的交易機器人](https://github.com/hackingthemarkets/tradingview-binance-strategy-alert-webhook)
+[python-binance包的說明文件](https://python-binance.readthedocs.io/en/latest/)
