@@ -5,6 +5,7 @@
 <h1>使用到的技術</h1>
 Python</br>
 API</br>
+webhook</br>
 Discord</br>
 
 *Azure VM*</br>
