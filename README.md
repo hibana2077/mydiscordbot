@@ -9,5 +9,7 @@ Discord</br>
 
 *Azure VM*
 
+*Linux*
+
 <h1>參考資料</h1>
 https://github.com/blockplusim/crypto_trading_service_for_tradingview
