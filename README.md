@@ -40,4 +40,6 @@ TradingView Pro帳號</br>
 * [TradingView 註冊](https://tw.tradingview.com/gopro/?share_your_love=hibana2077)</br>
 
 <h1>開始</h1>
-先用
+先去下載Python，如果已經安裝了可以跳過這一段。</br>
+* [下載Python](https://www.python.org/downloads/)</br>
+然後點選
