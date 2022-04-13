@@ -11,4 +11,4 @@ Discord</br>
 *Linux*
 
 <h1>參考資料</h1>
-https://github.com/blockplusim/crypto_trading_service_for_tradingview
+[文字](https://github.com/blockplusim/crypto_trading_service_for_tradingview)
