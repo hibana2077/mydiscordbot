@@ -24,8 +24,9 @@ Discord</br>
 * [python-binance API Error code](https://github.com/binance/binance-spot-api-docs/blob/master/errors.md)</br>
 
 
-<h1>必要條件</h1>
+<h1>先備條件</h1>
 一台電腦</br>
+VScode</br>
 Discord帳號</br>
 Binance帳號</br>
 TradingView Pro帳號</br>
@@ -56,8 +57,10 @@ TradingView Pro帳號</br>
 
 重新開機，接著按照下圖流程走。
 
-![](img/cmd1.png)
-
 ![](img/cmd3.png)
 
 ![](img/cmd2.png)
+
+下載地點選一個你開心的地方就好。
+
+解壓縮後，按照下圖流程走。
