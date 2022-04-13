@@ -68,3 +68,5 @@ TradingView Pro帳號</br>
 ![](img/file.png)
 
 ![](img/file1.png)
+
+
