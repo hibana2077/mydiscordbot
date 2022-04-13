@@ -20,6 +20,8 @@ Discord</br>
 
 * [binance的說明文件](https://binance-docs.github.io/apidocs/spot/cn/#45fa4e00db)</br>
 
+* [python-binance API Error code](https://github.com/binance/binance-spot-api-docs/blob/master/errors.md)</br>
+
 
 <h1>必要條件</h1>
 一台電腦</br>
@@ -31,3 +33,8 @@ TradingView Pro帳號</br>
 <h1>帳號註冊</h1>
 
 * [幣安註冊](https://www.binance.com/zh-TW/activity/referral/offers/claim?ref=CPA_00JTV45LM5)</br>
+
+* [Discord註冊](https://discord.com/)</br>
+
+* [TradingView 註冊](https://tw.tradingview.com/gopro/?share_your_love=hibana2077)</br>
+
