@@ -39,3 +39,5 @@ TradingView Pro帳號</br>
 
 * [TradingView 註冊](https://tw.tradingview.com/gopro/?share_your_love=hibana2077)</br>
 
+<h1>開始</h1>
+先用
