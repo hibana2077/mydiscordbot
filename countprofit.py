@@ -1,13 +1,11 @@
+
 import csv
 path = 'myorderbook.csv'
-def setbuyorder(flat,time,quil,price,pair,way):
+def setorder(flat,time,quil,price,pair,way):
+    flatsing=1 if flat != "flat" else 0
     with open(path,'a+',newline='') as csvfile:
         weiter = csv.writer(csvfile)
-        weiter.writerow([flat,time,quil,price,pair,way])
-def setsellorder(flat,time,quil,price,pair,way):
-    with open(path,'a+',newline='') as csvfile:
-        weiter = csv.writer(csvfile)
-        weiter.writerow([flat,time,quil,price,pair,way])
+        weiter.writerow([flatsing,time,quil*price,pair,way])
 def count_profit_or_loss():   
     
     with open(path,'r',newline='') as csvfile:
@@ -15,8 +13,8 @@ def count_profit_or_loss():
         totprofit=0
         temp=0
         for t in rows:
-            if int(t[0]):temp=int(t[3])
-            else:totprofit=totprofit+abs(temp-int(t[3]))
+            if int(t[0]):temp=int(t[2])
+            else:totprofit=totprofit+abs(temp-int(t[2]))
         
     return "總損益:" + str(totprofit) + "    "
 '''
