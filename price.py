@@ -113,8 +113,8 @@ async def on_message(message):
     
     if message.content.startswith('binfuex') and message.content.split()[1]!="test":#非常重要的部分 考慮挖出來做?
         try:
-            qu=message.content.split()[3]
-            order=binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2].upper(),type="MARKET",quantity=qu)
+            qu=float(message.content.split()[3])
+            order=binclient.futures_create_order(symbol=message.content.split()[1],side=message.content.split()[2].upper(),type="MARKET",quantity=int(qu))
             await message.channel.send(f"下單 {order['symbol']} 狀態{order['status']} 方向{order['side']} ")
         except Exception as e:await message.channel.send(e.message, "error")
     
