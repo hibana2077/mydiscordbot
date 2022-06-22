@@ -79,5 +79,13 @@ TradingView Pro帳號</br>
 
 ![](img/passwd4.png)
 
-然後依序填進去passwd.py即可，再按下ctrl+s。
+然後依序填進去passwd.py即可，再按下ctrl+s。</br>
+在下載下來的地方開啟終端機，輸入python mainbot.py。</br>
+到這邊就建置完成了。</br>
+然後把機器人加入到你個人的DC伺服器。</br>
+再去DC設定好webhook機器人和去TV載入策略。</br>
+並且建立警報。</br>
+警報內容填入</br>
+<strong>{"content":"binfuex {{ticker}} {{strategy.order.action}} {{strategy.order.contracts}} {{strategy.market_position}} {{timenow}} {{strategy.order.price}}"}</strong>
+</br>這個是下單的指令，訂單數量需要在TV裡面改。
 
